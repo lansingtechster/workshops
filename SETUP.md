@@ -26,6 +26,8 @@ This guide will help you install all the software needed for the Lansing Tech St
 - Stable internet connection
 - Parent's permission
 
+<div class="page-break-after"></div>
+
 ## Section 1: Operating System Setup
 
 Choose your platform below.
@@ -59,6 +61,8 @@ Choose your platform below.
 - If `wsl --install` fails, your Windows may need updates
 - [WSL Troubleshooting Guide](https://docs.microsoft.com/en-us/windows/wsl/troubleshooting)
 - Minimum requirement: Windows 10 version 2004 or higher
+
+<div class="page-break-after"></div>
 
 ### Chromebook Users: Enabling Linux
 
@@ -98,6 +102,8 @@ Choose your platform below.
 
 - You should see a command prompt ending in `$`
 
+<div class="page-break-after"></div>
+
 ## Section 2: Installing VS Code
 
 **What is VS Code?** Visual Studio Code is a free code editor made by Microsoft. It's powerful, customizable, and used by millions of developers.
@@ -129,6 +135,8 @@ code . # Opens current folder (the "dot" means current directory) in VS Code
 ```
 
 **Helpful Guide:** [VS Code with WSL](https://code.visualstudio.com/docs/remote/wsl)
+
+<div class="page-break-after"></div>
 
 ### Recommended Extensions for Everyone
 
@@ -188,6 +196,8 @@ npm --version     # Should show version number
 
 **Windows Note:** If using WSL, install Node.js inside Ubuntu (not on Windows side).
 
+<div class="page-break-after"></div>
+
 ## Section 4: Installing Python 3
 
 **What is Python?** Python is a programming language we'll use in workshops 4 and 5.
@@ -222,6 +232,8 @@ brew install python3
 ```bash
 python3 --version    # Should show 3.8 or higher
 ```
+
+<div class="page-break-after"></div>
 
 ## Section 5: Setting Up Git
 
@@ -300,12 +312,7 @@ Then:
 2. Click "New SSH key"
 3. Paste your public key
 4. Save
-
-**Test connection:**
-
-```bash
-ssh -T git@github.com
-```
+5. Test: `ssh -T git@github.com`
 
 ## Section 7: Cloning the Workshop Repository
 
@@ -330,6 +337,8 @@ If you have trouble with HTTPS, use SSH:
 git clone git@github.com:USERNAME/workshops.git
 cd workshops
 ```
+
+<div class="page-break-after"></div>
 
 ## Section 8: Final Verification
 
@@ -374,10 +383,9 @@ git --version
 - ✅ `node --version` shows v18 or higher
 - ✅ `python3 --version` shows 3.8 or higher
 - ✅ `git --version` shows version
-- ✅ Can create and run JavaScript files
-- ✅ Git config shows your name and email
+- ✅ `git config --list` shows your name and email (`user.name` and `user.email`)
 
-## Section 8: Troubleshooting & Help
+## Section 9: Troubleshooting & Help
 
 ### Common Issues
 
@@ -422,7 +430,9 @@ git --version
 - Instructors available to help
 - Don't hesitate to ask questions!
 
-## Section 9: Day Before Workshop Checklist
+<div class="page-break-after"></div>
+
+## Section 10: Day Before Workshop Checklist
 
 Complete this checklist 1-2 days before the workshop:
 
@@ -437,38 +447,3 @@ Complete this checklist 1-2 days before the workshop:
 - [ ] Can create and run a test JavaScript file
 
 **All checked?** You're ready for the workshop!
-
-## Additional Resources
-
-### Learning Resources
-
-**Command Line Basics:**
-
-- [Command Line Crash Course](https://learnpythonthehardway.org/book/appendixa.html)
-- [Linux Journey](https://linuxjourney.com/)
-
-**Git Fundamentals:**
-
-- [Try Git Interactive Tutorial](https://try.github.io/)
-- [Git Handbook](https://guides.github.com/introduction/git-handbook/)
-
-**JavaScript Previews:**
-
-- [JavaScript.info Tutorial](https://javascript.info/)
-- [MDN JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
-
-### Reference Documentation
-
-- **Node.js:** [https://nodejs.org/docs](https://nodejs.org/docs)
-- **VS Code:** [https://code.visualstudio.com/docs](https://code.visualstudio.com/docs)
-- **WSL:** [https://docs.microsoft.com/en-us/windows/wsl/](https://docs.microsoft.com/en-us/windows/wsl/)
-- **Python:** [https://docs.python.org/3/](https://docs.python.org/3/)
-- **Git:** [https://git-scm.com/doc](https://git-scm.com/doc)
-- **GitHub:** [https://docs.github.com/](https://docs.github.com/)
-
-## Questions?
-
-**Email:** [your-workshop-email@example.com]
-**Office Hours:** [if available, list times]
-
-We're here to help! Don't struggle alone - reach out with questions.
