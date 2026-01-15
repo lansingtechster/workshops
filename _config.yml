@@ -4,6 +4,7 @@
 title: Lansing Tech Studio Workshops
 description: Youth tech workshops for students ages 12-14
 baseurl: "/workshops"
+parent_title: Lansing Tech Studio
 url: "https://lansingtechstudio.org"
 
 # Build settings
@@ -21,7 +22,7 @@ relative_links:
 
 # Navigation structure - used by _includes/nav.html
 navigation:
-  - title: Home
+  - title: Workshops Home
     url: /
   - title: Setup Guide
     url: /SETUP

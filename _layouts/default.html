@@ -12,9 +12,9 @@
 <body>
   <header class="site-header">
     <div class="header-content">
-      <a href="{{ '/' | relative_url }}" class="site-logo">
+      <a href="{{ site.url }}" class="site-logo">
         <img src="{{ '/assets/images/logo-transparent.png' | relative_url }}" alt="Lansing Tech Studio" class="logo-img">
-        <span class="site-title">{{ site.title }}</span>
+        <span class="site-title">{{ site.parent_title }}</span>
       </a>
       <button class="nav-toggle" aria-label="Toggle navigation">
         <span class="hamburger"></span>
@@ -30,7 +30,7 @@
     <main class="main-content">
       {% if page.workshop %}
       <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/' | relative_url }}">Workshops Home</a>
         <span class="separator">›</span>
         <a href="{{ '/tech-fundamentals/' | relative_url }}">{{ page.workshop }}</a>
         {% if page.section %}
