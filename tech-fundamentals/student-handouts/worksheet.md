@@ -13,18 +13,17 @@ track of what you learned today. No perfect answers needed; curiosity wins.
 
 ## 1) Warm-Up Check-In
 
-- One thing I already use a computer for: ____________________________________
-- One thing I want to get better at: ________________________________________
+- One thing I already use a computer for: <span class="blank-line"></span>
+- One thing I want to get better at: <span class="blank-line"></span>
 
 ## 2) What Is a Computer?
 
 Fill in the blanks.
 
-- The _____________________ is the "brain" that does the thinking.
-- _____________________ is short-term memory; _____________________ is
-  long-term storage.
-- _____________________ are the physical parts you can touch.
-- _____________________ are the instructions that tell the hardware what to do.
+- The <span class="blank-line-short"></span> is the "brain" that does the thinking.
+- <span class="blank-line-short"></span> is short-term memory; <span class="blank-line-short"></span> is long-term storage.
+- <span class="blank-line-short"></span> are the physical parts you can touch.
+- <span class="blank-line-short"></span> are the instructions that tell the hardware what to do.
 
 ## 3) Files, Folders, and Extensions
 
@@ -33,20 +32,20 @@ Fill in the blanks.
 
 &nbsp;
 
-&nbsp; 
+&nbsp;
 
 - Why do file extensions like `.txt`, `.html`, or `.py` matter?
 
 &nbsp;
 
-&nbsp; 
+&nbsp;
 
 ## 4) Code and Programs
 
-- Code is: _________________________________________________________________
-- When code is saved together to do a job, it's a ___________________________.
+- Code is: <span class="blank-line"></span>
+- When code is saved together to do a job, it's a <span class="blank-line"></span>.
 - Circle one: Computers are forgiving / literal.
-- Example of a program I have used: ________________________________________
+- Example of a program I have used: <span class="blank-line"></span>
 
 ## 5) Terminal Scavenger Hunt
 
@@ -61,6 +60,6 @@ Write what each command does and, if you try it, the output you saw.
 
 ## 6) Reflection
 
-- One thing that felt new or surprising: ____________________________________
-- One thing I want to practice next: ________________________________________
-- Question I'd ask if I had 10 more minutes: ________________________________
+- One thing that felt new or surprising: <span class="blank-line"></span>
+- One thing I want to practice next: <span class="blank-line"></span>
+- Question I'd ask if I had 10 more minutes: <span class="blank-line"></span>

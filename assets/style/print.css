@@ -13,13 +13,16 @@
   line-height: 1.3;
   margin-top: 0.6em;
 }
+
 .main-content ul,
 .main-content ol {
   padding-left: 1.1em;
 }
+
 .main-content li {
   margin: 0.25em 0;
 }
+
 code {
   font-size: 90%;
 }
@@ -48,6 +51,12 @@ code {
   break-inside: avoid;
 }
 
+/* Blank lines for print */
+.blank-line {
+  border-bottom-color: #000 !important;
+  border-bottom-style: solid !important;
+}
+
 .no-page-break {
   page-break-before: avoid;
   page-break-after: avoid;
@@ -58,18 +67,27 @@ code {
 }
 
 @media print {
-  body > div > h1:nth-child(1), div.footer {
+
+  body>div>h1:nth-child(1),
+  div.footer {
     display: none;
   }
-  
+
   /* Automatically prevent page breaks inside code blocks and tables */
-  pre, table, figure {
+  pre,
+  table,
+  figure {
     page-break-inside: avoid;
     break-inside: avoid;
   }
-  
+
   /* Keep headings with following content */
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     page-break-after: avoid;
     break-after: avoid;
   }

@@ -7,7 +7,7 @@
   --primary-light: #3b82f6;
   --secondary-color: #10b981;
   --accent-color: #f59e0b;
-  
+
   /* Neutral colors */
   --bg-color: #ffffff;
   --bg-secondary: #f8fafc;
@@ -15,20 +15,22 @@
   --text-color: #1e293b;
   --text-muted: #64748b;
   --border-color: #e2e8f0;
-  
+
   /* Sizing */
   --sidebar-width: 280px;
   --header-height: 60px;
   --content-max-width: 900px;
   --spacing-unit: 1rem;
-  
+
   /* Typography */
   --font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "Roboto", "Oxygen", "Ubuntu", sans-serif;
   --font-mono: "Cascadia Code", "Fira Code", "Consolas", monospace;
 }
 
 /* Reset and base */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -117,8 +119,13 @@ body {
   transition: transform 0.2s;
 }
 
-.hamburger::before { top: -8px; }
-.hamburger::after { bottom: -8px; }
+.hamburger::before {
+  top: -8px;
+}
+
+.hamburger::after {
+  bottom: -8px;
+}
 
 .nav-toggle.active .hamburger {
   background: transparent;
@@ -159,7 +166,7 @@ body {
   padding: 0;
 }
 
-.nav-item > a {
+.nav-item>a {
   display: block;
   padding: 0.75rem var(--spacing-unit);
   color: var(--text-color);
@@ -169,14 +176,14 @@ body {
   transition: all 0.2s;
 }
 
-.nav-item.has-subnav > .nav-item-header {
+.nav-item.has-subnav>.nav-item-header {
   display: flex;
   align-items: center;
   border-left: 3px solid transparent;
   transition: all 0.2s;
 }
 
-.nav-item.has-subnav > .nav-item-header > a {
+.nav-item.has-subnav>.nav-item-header>a {
   flex: 1;
   padding: 0.75rem var(--spacing-unit);
   color: var(--text-color);
@@ -213,16 +220,16 @@ body {
   transform: rotate(180deg);
 }
 
-.nav-item > a:hover,
-.nav-item.active > a,
-.nav-item.has-subnav > .nav-item-header:hover,
-.nav-item.has-subnav.active > .nav-item-header {
+.nav-item>a:hover,
+.nav-item.active>a,
+.nav-item.has-subnav>.nav-item-header:hover,
+.nav-item.has-subnav.active>.nav-item-header {
   background: var(--bg-tertiary);
   border-left-color: var(--primary-color);
 }
 
-.nav-item.has-subnav > .nav-item-header:hover > a,
-.nav-item.has-subnav.active > .nav-item-header > a {
+.nav-item.has-subnav>.nav-item-header:hover>a,
+.nav-item.has-subnav.active>.nav-item-header>a {
   color: var(--primary-color);
 }
 
@@ -239,7 +246,7 @@ body {
   max-height: 500px;
 }
 
-.nav-subitem > a {
+.nav-subitem>a {
   display: block;
   padding: 0.5rem var(--spacing-unit) 0.5rem calc(var(--spacing-unit) * 1.5);
   color: var(--text-color);
@@ -248,8 +255,8 @@ body {
   transition: color 0.2s;
 }
 
-.nav-subitem > a:hover,
-.nav-subitem > a.active {
+.nav-subitem>a:hover,
+.nav-subitem>a.active {
   color: var(--primary-color);
 }
 
@@ -318,7 +325,12 @@ body {
 }
 
 /* Typography */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 2rem;
   margin-bottom: 1rem;
   font-weight: 600;
@@ -339,8 +351,13 @@ h2 {
   padding-bottom: 0.25rem;
 }
 
-h3 { font-size: 1.25rem; }
-h4 { font-size: 1.125rem; }
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
 
 p {
   margin: 0 0 1rem;
@@ -356,7 +373,8 @@ a:hover {
 }
 
 /* Lists */
-ul, ol {
+ul,
+ol {
   margin: 0 0 1rem;
   padding-left: 1.5rem;
 }
@@ -365,7 +383,8 @@ li {
   margin-bottom: 0.5rem;
 }
 
-li > ul, li > ol {
+li>ul,
+li>ol {
   margin-top: 0.5rem;
   margin-bottom: 0;
 }
@@ -402,7 +421,8 @@ table {
   margin: 0 0 1rem;
 }
 
-th, td {
+th,
+td {
   padding: 0.75rem;
   text-align: left;
   border: 1px solid var(--border-color);
@@ -549,6 +569,7 @@ blockquote p:last-child {
 
 /* Print styles */
 @media print {
+
   .site-header,
   .sidebar,
   .nav-toggle,
@@ -583,15 +604,22 @@ blockquote p:last-child {
   a[href^="/"]::after {
     content: "";
   }
-  
+
   /* Automatically prevent page breaks inside code blocks and tables */
-  pre, table, figure {
+  pre,
+  table,
+  figure {
     page-break-inside: avoid;
     break-inside: avoid;
   }
-  
+
   /* Keep headings with following content */
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     page-break-after: avoid;
     break-after: avoid;
   }
@@ -600,4 +628,40 @@ blockquote p:last-child {
 /* Utility classes */
 .print-friendly {
   font-family: "OpenDyslexic", "Atkinson Hyperlegible", var(--font-family);
+}
+
+/* Blank lines for worksheets */
+.blank-line {
+  display: inline-block;
+  min-width: 300px;
+  border-bottom: 1px solid #000 !important;
+  margin: 0 0.25rem;
+  vertical-align: baseline;
+  padding-bottom: 0.125rem;
+}
+
+.blank-line-short {
+  display: inline-block;
+  min-width: 150px;
+  border-bottom: 1px solid #000 !important;
+  margin: 0 0.25rem;
+  vertical-align: baseline;
+  padding-bottom: 0.125rem;
+}
+
+.blank-line-long {
+  display: inline-block;
+  min-width: 500px;
+  border-bottom: 1px solid #000 !important;
+  margin: 0 0.25rem;
+  vertical-align: baseline;
+  padding-bottom: 0.125rem;
+}
+
+.blank-line-full {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #000 !important;
+  margin: 0.5rem 0;
+  padding-bottom: 0.125rem;
 }
