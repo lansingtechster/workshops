@@ -5,6 +5,17 @@
 // Create variables for your story elements
 // Hint: Use let for things that might change, const for things that stay the same
 
+const playerName = "Techster";
+let experience = 0;
+let location = "home"
+
+console.log("At the beginning of our journey, " + playerName + " was at " + location + ".")
+console.log("Current experience: " + experience + " points")
+
+// monster encounter
+experience = experience + 100
+console.log("Current experience: " + experience + " points")
+
 // TODO: Add your variables here
 // Example: const heroName = "brave adventurer";
 
